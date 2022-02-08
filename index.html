@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+  </head>
+  <body> 
+    <div class="caculator"> 
+      <form class="form__box" name="calc">
+        <input class="output" type="text" name="txt" disabled>
+        <div class="total__box">
+          <div class="number"> 
+            <div class="grid"> 
+              <div class="row"> 
+                <div class="col l-4 m-4 c-4">
+                  <p class="number__box" onclick="calc.txt.value += '7'">7</p>
+                </div>
+                <div class="col l-4 m-4 c-4">
+                  <p class="number__box" onclick="calc.txt.value += '8'">8</p>
+                </div>
+                <div class="col l-4 m-4 c-4">
+                  <p class="number__box" onclick="calc.txt.value += '9'">9</p>
+                </div>
+                <div class="col l-4 m-4 c-4">       
+                  <p class="number__box" onclick="calc.txt.value += '6'">6</p>
+                </div>
+                <div class="col l-4 m-4 c-4">  
+                  <p class="number__box" onclick="calc.txt.value += '5'">5</p>
+                </div>
+                <div class="col l-4 m-4 c-4">  
+                  <p class="number__box" onclick="calc.txt.value += '4'">4</p>
+                </div>
+                <div class="col l-4 m-4 c-4">    
+                  <p class="number__box" onclick="calc.txt.value += '3'">3</p>
+                </div>
+                <div class="col l-4 m-4 c-4">   
+                  <p class="number__box" onclick="calc.txt.value += '2'">2</p>
+                </div>
+                <div class="col l-4 m-4 c-4">     
+                  <p class="number__box" onclick="calc.txt.value += '1'">1</p>
+                </div>
+                <div class="col l-4 m-4 c-4">  
+                  <p class="number__box" onclick="calc.txt.value += ' 0 '">0</p>
+                </div>
+                <div class="col l-4 m-4 c-4">     
+                  <p class="number__box" onclick="calc.txt.value += ' . '">.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="operator">
+            <div class="grid"> 
+              <div class="row"> 
+                <div class="col l-6 m-6 c-6">
+                  <p class="number__box" onclick="calc.txt.value += ' + '">+</p>
+                </div>
+                <div class="col l-6 m-6 c-6">   
+                  <p class="number__box" onclick="calc.txt.value += ' - '">-</p>
+                </div>
+                <div class="col l-6 m-6 c-6">  
+                  <p class="number__box" onclick="calc.txt.value += ' * '">*</p>
+                </div>
+                <div class="col l-6 m-6 c-6"> 
+                  <p class="number__box" onclick="calc.txt.value += ' / '">/</p>
+                </div>
+                <div class="col l-6 m-6 c-6"> 
+                  <p class="number__box" onclick="calc.txt.value =eval(calc.txt.value)">=</p>
+                </div>
+                <div class="col l-6 m-6 c-6"> 
+                  <p class="number__box" onclick="calc.txt.value = ' '">c</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

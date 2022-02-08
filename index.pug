@@ -1,0 +1,55 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title calculator
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/grid.css")
+    body 
+     .caculator 
+       form(class="form__box" name="calc")
+        input(type="text"  name="txt"  disabled class="output")
+        .total__box
+         .number 
+          .grid 
+           .row 
+            .col.l-4.m-4.c-4
+             p(class="number__box" onclick="calc.txt.value += '7'")="7"
+            .col.l-4.m-4.c-4
+             p(class="number__box" onclick="calc.txt.value += '8'")="8"
+            .col.l-4.m-4.c-4
+             p(class="number__box" onclick="calc.txt.value += '9'")="9"
+            .col.l-4.m-4.c-4        
+             p(class="number__box" onclick="calc.txt.value += '6'")="6"
+            .col.l-4.m-4.c-4   
+             p(class="number__box" onclick="calc.txt.value += '5'")="5"
+            .col.l-4.m-4.c-4   
+             p(class="number__box" onclick="calc.txt.value += '4'")="4"
+            .col.l-4.m-4.c-4     
+             p(class="number__box" onclick="calc.txt.value += '3'")="3"
+            .col.l-4.m-4.c-4    
+             p(class="number__box" onclick="calc.txt.value += '2'")="2"
+            .col.l-4.m-4.c-4      
+             p(class="number__box" onclick="calc.txt.value += '1'")="1"
+            .col.l-4.m-4.c-4   
+             p(class="number__box" onclick="calc.txt.value += ' 0 '")="0"
+            .col.l-4.m-4.c-4      
+             p(class="number__box" onclick="calc.txt.value += ' . '")="."
+         .operator
+          .grid 
+           .row 
+            .col.l-6.m-6.c-6
+             p(class="number__box" onclick="calc.txt.value += ' + '")="+"
+            .col.l-6.m-6.c-6    
+             p(class="number__box" onclick="calc.txt.value += ' - '")="-"
+            .col.l-6.m-6.c-6   
+             p(class="number__box" onclick="calc.txt.value += ' * '")="*"
+            .col.l-6.m-6.c-6  
+             p(class="number__box" onclick="calc.txt.value += ' / '")="/"
+            .col.l-6.m-6.c-6  
+             p(class="number__box" onclick="calc.txt.value =eval(calc.txt.value)")="="
+            .col.l-6.m-6.c-6  
+             p(class="number__box" onclick="calc.txt.value = ' '")="c"
+           
