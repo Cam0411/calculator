@@ -61,7 +61,6 @@ body {
 .caculator .output .val {
   font-size: 20px;
   margin-top: 10px;
-  color: #414141;
   opacity: 0.8;
 }
 
@@ -99,7 +98,7 @@ body {
 .caculator .total__box .number__box {
   cursor: pointer;
   padding: 25px 15px;
-  background: #414141;
+  background: #3d3d3d;
   color: #fff;
   text-align: center;
   margin-bottom: 10px;
