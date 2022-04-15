@@ -114,6 +114,10 @@ body {
   border-radius: 5px;
 }
 
+.caculator .total__box .number__box:active {
+  background: #414141;
+}
+
 @media (max-width: 1000px) {
   .caculator {
     padding: 10px;
